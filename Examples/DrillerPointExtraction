@@ -1,0 +1,4 @@
+1 150
+# if driller and point extraction then equip the plasma charger and thin containment field
+condition and 14:4 21:0
+true 23:0:1:1 27:0:1:1:4:1
