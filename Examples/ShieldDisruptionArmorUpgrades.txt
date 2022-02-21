@@ -1,16 +1,16 @@
 1 572
+
+# set int to whatever character we are using.
+condition and 21:0
+true 2:0
+condition and 21:1
+true 2:1
+condition and 21:2
+true 2:2
+false 2:3
+
 # switch off of shield related armor upgrades if shield disruption.
 # change the false argument's upgrade indexes to what you want as default.
 condition and 18:1
-# driller
-true 27:0:7:0:0:2 27:0:7:0:1:1 27:0:7:0:3:2
-false 27:0:7:0:0:1 27:0:7:0:1:0 27:0:7:0:3:1
-# engi
-true 27:1:7:0:0:2 27:1:7:0:1:1 27:1:7:0:3:2
-false 27:1:7:0:0:1 27:1:7:0:1:0 27:1:7:0:3:1
-# gunner
-true 27:2:7:0:0:2 27:2:7:0:1:1 27:2:7:0:3:2
-false 27:2:7:0:0:1 27:2:7:0:1:0 27:2:7:0:3:1
-# scout
-true 27:3:7:0:0:2 27:3:7:0:1:1 27:0:7:0:3:2
-false 27:3:7:0:0:1 27:3:7:0:1:0 27:0:7:0:3:1
+true 27:i:7:0:0:2 27:i:7:0:1:1 27:i:7:0:3:2
+false 27:i:7:0:0:1 27:i:7:0:1:0 27:i:7:0:3:1
