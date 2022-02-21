@@ -1,0 +1,39 @@
+1 989
+
+# set int to whatever character we are using.
+condition and 21:0
+true 2:0
+condition and 21:1
+true 2:1
+condition and 21:2
+true 2:2
+false 2:3
+
+# set base perks
+condition and 1
+# set perks to a vampire/iron/fieldmedic build
+true 28:i:1:0:Vampire 28:i:0:0:IronWill 28:i:0:1:FieldMedic
+# set backup perks in case no following rules apply
+true 28:i:1:1:BugThing 28:i:1:2:MarathonGuy
+
+# mining expedition = deep pockets
+condition and 14:0
+true 28:i:1:1:DeepPockets
+# salvage operation = depositior
+condition and 14:3
+true 28:i:1:1:ExpertDepositor
+# elimination = sweet tooth
+condition and 14:6
+true 28:i:1:1:RedSugarRocks
+# industrial sabotage = resupplier
+condition and 14:7
+true 28:i:1:1:Resupplier
+# point extract = strong arm
+condition and 14:4
+true 28:i:1:1:FlareThrower
+# bogs or point extract = unstopable
+condition or 13:1 14:4
+true 28:i:1:2:StrongBack
+# magma core = elemental insulation
+condition and 13:4
+true 28:i:1:2:TemperatureInsulation
