@@ -1,16 +1,11 @@
-1 989
+1 -1
 
-# set int to whatever character we are using.
-condition and 21:0
-true 2:0
-condition and 21:1
-true 2:1
-condition and 21:2
-true 2:2
-false 2:3
+
 
 # set base perks
 condition and 1
+# set int to whatever character we are using.
+true 4:1
 # set perks to a vampire/iron/fieldmedic build
 true 28:i:1:0:Vampire 28:i:0:0:IronWill 28:i:0:1:FieldMedic
 # set backup perks in case no following rules apply
